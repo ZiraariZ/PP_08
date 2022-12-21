@@ -1,0 +1,141 @@
+/* HEADER */
+*{
+    color: black;
+    text-decoration: none;
+}
+.header {
+    border-top: 4px solid #007AC3 ;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__up__nav__top{
+    display: flex;
+}
+.nav__logo__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__logo__logo {
+    width: 110px;
+    height: 110px;
+}
+.nav__logo__title {
+    font-size: 29px;
+    width: 300px;
+    color: #007AC3;
+}
+.nav__menu__menu {
+    display: flex;
+}
+.nav__menu__menu li {
+    width: 100px;
+    height: 143px;
+    background-color: rgb(0, 122, 195, 0.4);
+
+    font-size: 14px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav__menu__menu li:not(:last-child){
+    margin-right: 5px;
+}
+.nav__menu__menu li:first-child{
+    border-top: 3px red solid; 
+}
+.nav__menu__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    width: 100px;
+    height: 75px;
+}
+.nav__menu__link:hover{
+    transform: scale(0.8);
+    transition: 0.2s;
+}
+.header__up__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info__search__input {
+    width: 394px;
+    height: 37px;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+.info__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 200px;
+}
+.section__nav__menu{
+    display: flex;
+}
+.section__nav__menu__li:not(:last-child){
+    padding-right: 20px;
+}
+.section__nav__menu__link:hover{
+    color: red;
+    transition: 0.2s;
+}
+.header__down {
+    position: relative;
+}
+/* SLIDER -----------------------------------*/
+.slider_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myslide {
+    display: none;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .myslide img {
+    margin-right: 15px;
+    margin-left: 15px;
+  } */
+  .slider_wrapper a {
+    cursor: pointer;
+  }
+/* -------------------------------------------- */
+
+.header__down__big__nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header__down__big__nav__content{
+    position: absolute;
+    top: -150px
+}
+.big__nav__link:not(:last-child){
+    padding-right: 40px;
+}
+.big__nav__link:hover{
+    transform: scale();
+}
+.header__down__info {
+    padding-top: 155px;
+    text-align: center;
+}
+.header__down__info__text{
+    color: red;
+}
+.header__down__info__link:hover{
+    color: #007AC3;
+}
