@@ -35,3 +35,69 @@ function makeTimer(){
 }
 
 // ===========================
+// Burger
+const BtnBMenu = document.querySelector('.nav__menu_burger');
+const header = document.querySelector('.header__up__nav')
+const headerLogo = document.querySelector('.nav__logo')
+
+
+BtnBMenu.addEventListener("click", () => {
+    const burger = document.querySelector('.nav__menu_burger_menu')
+    if (burger == null){
+        createBurger()
+    } else {
+        deleteBurger()
+    }
+})
+
+function createBurger(){
+    headerLogo.insertAdjacentHTML('afterend',
+    `
+    <ul class="nav__menu_burger_menu">
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">ГЛАВНАЯ</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">ОТДЕЛЕНИЯ СТАЦИОНАРА</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">ДИСПАНСЕРЫ</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">АСПЭ</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">ПАЦИЕНТАМ</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">КОНТАКТЫ</p>
+            </a>
+        </li>
+        <li class="nav__menu_burger__li">
+            <a href="/main.html" class="nav__menu_burger__link">
+                <p class="nav__menu_burger__title">ПЛАТНЫЕ УСЛУГИ</p>
+            </a>
+        </li>
+    </ul>
+    `
+    )
+    BtnBMenu.style.transform = "rotate(-90deg)"
+    BtnBMenu.style.transition =  "0.5s"
+}
+function deleteBurger (){
+    const burger = document.querySelector('.nav__menu_burger_menu')
+    burger.remove()
+    BtnBMenu.style.transform = "rotate(0deg)"
+    BtnBMenu.style.transition =  "0.5s" 
+}
