@@ -55,37 +55,37 @@ function createBurger(){
     `
     <ul class="nav__menu_burger_menu">
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="/index.html" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">ГЛАВНАЯ</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">ОТДЕЛЕНИЯ СТАЦИОНАРА</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">ДИСПАНСЕРЫ</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">АСПЭ</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">ПАЦИЕНТАМ</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">КОНТАКТЫ</p>
             </a>
         </li>
         <li class="nav__menu_burger__li">
-            <a href="/main.html" class="nav__menu_burger__link">
+            <a href="" class="nav__menu_burger__link">
                 <p class="nav__menu_burger__title">ПЛАТНЫЕ УСЛУГИ</p>
             </a>
         </li>
