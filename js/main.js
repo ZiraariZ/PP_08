@@ -1,13 +1,9 @@
 'use strict'
 
-// SLIDER
+// SLIDERS
 
 let slideIndex = 1;
 showSlides(slideIndex);
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("myslide");
@@ -22,6 +18,19 @@ function showSlides(n) {
         slide.style.display = "none";
     }
     slides[slideIndex - 1].style.display = "flex";    
+
+    let slidesLic = document.getElementsByClassName("licens__myslide");
+    if (n > slidesLic.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slidesLic.length;
+    }
+ 
+    for (let slide of slidesLic) {
+        slide.style.display = "none";
+    }
+    slidesLic[slideIndex - 1].style.display = "flex";  
 }
 
 let timer = 0;
@@ -101,3 +110,14 @@ function deleteBurger (){
     BtnBMenu.style.transform = "rotate(0deg)"
     BtnBMenu.style.transition =  "0.5s" 
 }
+
+// Yandex MAP
+ymaps.ready(init);
+function init() {
+    var map = new ymaps.Map('map', {
+        center: [56.234851832432916, 37.96807911306271],
+        zoom: 17,
+        controls: ['zoomControl'],
+        behaviors: ['drag'] 
+    });
+};
